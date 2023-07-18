@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import generateTeams from "./jest2";
+import generateTeams from "./logic";
 
 export default function AddFixedTeam({ teamNumber, noTeam }) {
   const [forms, setForms] = useState([]);
