@@ -5,7 +5,7 @@
 :root {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  @apply bg-slate-800 text-threeDs-lightYellow;
+  @apply bg-threeDs-bg text-threeDs-lightYellow;
 }
 
 ::-webkit-scrollbar {

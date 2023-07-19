@@ -45,10 +45,8 @@ export default function AddFixedTeam({
     }
 
     let teams = generateTeams(players, fixedTeams, teamNumber);
-    console.log(teams);
-    setResult(teams);
 
-    setShowModal(true);
+    setResult(teams);
   };
 
   return (
@@ -71,6 +69,7 @@ export default function AddFixedTeam({
           </p>
         </button>
         <button
+          onClick={() => setShowModal(true)}
           type="submit"
           className="bg-threeDs-darkPink flex justify-center items-center
           rounded-2xl  text-base p-4
@@ -90,7 +89,7 @@ export default function AddFixedTeam({
      duration-500 overflow-y-auto"
       >
         {forms.map((form, index) => (
-          <div key={index} className="flex relative w-[30%] h-[40%]">
+          <div key={index} className="flex relative w-full md:w-[30%] h-[40%]">
             <textarea
               className="w-full h-full resize-none rounded-2xl bg-threeDs-lightYellow text-threeDs-darkPinkShadow text-base p-4
             drop-shadow-[5px_5px_1px_rgba(238,105,88,0.4)] shadow-[inset_-5px_-5px_5px_rgba(251,213,184,1)]

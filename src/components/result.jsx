@@ -1,10 +1,11 @@
-export default function Result({ setShowModal, result }) {
+export default function Results({ setShowModal, result }) {
   return (
-    <div className="w-screen h-screen fixed z-10 top-0 left-0 flex justify-center items-center">
-      <div className="flex relative w-[30%] h-[40%] bottom-24 right-48">
+    <div className="w-screen h-screen fixed z-10 top-0 left-0 flex justify-center items-center p-5 md:p-0 bg-threeDs-darkPinkShadow/50 md:bg-transparent">
+      <div className="flex relative w-full  md:w-[30%] h-[40%] md:bottom-24 md:right-48">
         <div
-          className="w-full h-full rounded-2xl bg-threeDs-cream text-threeDs-darkPinkShadow text-base p-5
-            drop-shadow-[50px_50px_1px_rgba(238,105,88,0.4)] shadow-[inset_-20px_-20px_10px_rgba(251,202,157,0.9)]
+          className="w-full h-full rounded-2xl bg-threeDs-cream text-threeDs-darkPinkShadow text-base p-5 
+          drop-shadow-[5px_50px_1px_rgba(238,105,88,0.4)]
+            md:drop-shadow-[50px_50px_1px_rgba(238,105,88,0.4)] shadow-[inset_-20px_-20px_10px_rgba(251,202,157,0.9)]
            hover:scale-[99%] hover:translate-x-[2px] hover:translate-y-[2px] hover:drop-shadow-[2px_2px_1px_rgba(238,105,88,0.6)] 
            duration-500 "
         >
