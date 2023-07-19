@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 :root {
-  @apply bg-slate-800 text-fuchsia-600;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  @apply bg-slate-800 text-threeDs-lightYellow;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
