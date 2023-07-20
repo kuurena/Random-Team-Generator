@@ -1,6 +1,9 @@
 export default function Results({ setShowModal, result }) {
   return (
-    <div className="w-screen h-screen fixed z-10 top-0 left-0 flex justify-center items-center p-5 md:p-0 bg-threeDs-darkPinkShadow/50 md:bg-transparent">
+    <div
+      className="w-screen h-screen fixed z-10 top-0 left-0 flex justify-center items-center p-5 md:p-0
+     bg-threeDs-darkPinkShadow/50 md:bg-transparent"
+    >
       <div className="flex relative w-full  md:w-[30%] h-[40%] md:bottom-24 md:right-48">
         <div
           className="w-full h-full rounded-2xl bg-threeDs-cream text-threeDs-darkPinkShadow text-base p-5 
